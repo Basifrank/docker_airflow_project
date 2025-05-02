@@ -1,0 +1,12 @@
+[2025-05-02T19:58:19.942+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T19:58:19.987+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: random_user_dag_s3.get_api_data scheduled__2024-06-28T00:00:00+00:00 [queued]>
+[2025-05-02T19:58:20.017+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: random_user_dag_s3.get_api_data scheduled__2024-06-28T00:00:00+00:00 [queued]>
+[2025-05-02T19:58:20.017+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-05-02T19:58:20.061+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): get_api_data> on 2024-06-28 00:00:00+00:00
+[2025-05-02T19:58:20.077+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3370) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T19:58:20.100+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'random_user_dag_s3', 'get_api_data', 'scheduled__2024-06-28T00:00:00+00:00', '--job-id', '1018', '--raw', '--subdir', 'DAGS_FOLDER/random_user_dag.py', '--cfg-path', '/tmp/tmpuxb0_tzd']
+[2025-05-02T19:58:20.105+0000] {standard_task_runner.py:91} INFO - Job 1018: Subtask get_api_data
+[2025-05-02T19:58:20.089+0000] {standard_task_runner.py:63} INFO - Started process 3383 to run task
+[2025-05-02T19:58:20.388+0000] {task_command.py:426} INFO - Running <TaskInstance: random_user_dag_s3.get_api_data scheduled__2024-06-28T00:00:00+00:00 [running]> on host 1878fa9eca19
